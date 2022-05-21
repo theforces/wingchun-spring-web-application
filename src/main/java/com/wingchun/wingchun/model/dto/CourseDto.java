@@ -6,6 +6,5 @@ import lombok.Data;
 public class CourseDto {
 
     private String name;
-
     private Double duration;
 }

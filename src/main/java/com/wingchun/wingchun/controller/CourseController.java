@@ -51,7 +51,7 @@ public class CourseController {
     }
 
     @DeleteMapping("{courseId}")
-    public ResponseEntity<?> DeleteCourseById(@PathVariable Long courseId) {
+    public ResponseEntity<?> deleteCourseById(@PathVariable Long courseId) {
 
         if(!courseService.getCourseRepository().findById(courseId).isPresent()) {
             return new ResponseEntity<>("", HttpStatus.NOT_FOUND);
